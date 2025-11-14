@@ -9,4 +9,4 @@ I visited the page and tried to go /robots.txt directory and i saw that /fuel di
 And also in main page when i scrolled down a bit i saw username and password admin:admin and i logged in as admin.But as i checked everything there,i could not find anything and i checked fuel cms 1.4 exploits and i found an exploit for it and i executed it and got command line then i write an reverse shell and got shell on my end.Then i get the flag for user
 
 2.Find the root.txt
-
+As soon as i got reverse shell i tried to escalate my priv so i send linpeas to target via nc and run it.With the help of linpeas i manually visited the directory /var/www/html/fuel/application/config/ and there was a file called database.php which got password for root.I logged in as root and got the flag.
